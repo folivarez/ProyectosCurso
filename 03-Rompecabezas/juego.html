@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rompecabezas</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+
+    <div class="col-40">
+    
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+      <div id="instrucciones">
+        <ul id="lista-instrucciones">
+            
+        </ul>
+      </div>
+      <div id="cont-boton">
+        <button class="boton" onclick="mezclarPiezas(30)">Mezclar Piezas</button>
+      </div>
+      <div id="objetivo">
+        <div class="texto-centrado">
+          <img id="img_final" src="images/final.jpg" alt="">
+        </div>
+      </div>
+      <div id="ultimo-mov">
+        <div id="flecha" class="texto-centrado">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-60">
+      <div class="popup">      
+      <span class="popuptext" id="myPopup">Felicitaciones.<br>¡Usted gano!</span>
+    </div>
+      <div id="juego">
+        <div class="cuadrados" id="pieza1"><img src="images/1.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza2"><img src="images/2.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza3"><img src="images/3.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza4"><img src="images/4.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza5"><img src="images/5.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza6"><img src="images/6.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza7"><img src="images/7.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza8"><img src="images/8.jpg" alt=""></div>
+        <div class="cuadrados" id="pieza9"></div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Dev: Olivarez Federico  |  Art: Facundo Mansilla</p>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+CLASE 11
+Martes 28/08
+Nos dividimos en grupos y a modo de repaso respondemos las siguientes preguntas: 
+
+1- ¿Cómo se forma la sintaxis de CSS?
+
+selector {
+		propiedad:valor;
+		}
+
+2- ¿Qué procedimientos se siguen en la programación?
+Se identifica el problema a resolver, y de intenta dividir en problemas mas chicos.
+
+3- ¿Cuáles son los tipos de dato más básicos de JS?
+String, Char, int, booleano
+
+4-¿Cuáles son los operadores de JS? ¿Para que se usan?
+&& es para evaluar si 2 o mas condiciones se cumplen
+|| es para evaluar si una de las 2 o mas condiciones se cumplen
+
+5- Explica brevemente los tipos de comandos de GIT. 
+git init - inicializa el repositorio
+git clone - se obtiene un repositorio de un servidor
+git add - se agrega los cambios al index para poder commitear
+git commit - se marca un punto de la historia
+git pull - se obtiene los ultimos cambios del repositorio remoto
+git push - se suben los ultimos cambios comiteados
+git status - se obtiene el estado de los archivos/directorios
+git merge - se combinan los cambios obtenidos con los creados
+
+
+6- ¿Para qué sirve Blockchain? 
+Es un concepto de red distribuida donde todos tenemos una parte del historial y no necesitamos concentran la informacion en un solo lugar
+
+7-¿Qué tipo de etiquetas tiene que tener un archivo HTML? Explicalas. 
+minimamente
+<!DOCTYPE html> --> Se identifica version de html usado
+<html> --> Se identifica que inicia el archivo contendra codigo html hasta el cierre del tag
+<head> --> Se identifica el encabezado el cual contendra titulo links o vinculos hacia otros archivos y codificacion
+	<meta charset="UTF-8">  --> tipo de codificacion de caracteres
+	<title>Calculadora</title> --> titulo que se identifica en la barra de titulo de los browser
+</head>
+<body> --> encierra el cuerpo del codigo html el cual contendra la informacion del sitio	
+</body>
+</html>
+
+8- ¿A que se llama DIV? ¿Con qué lenguaje de programación se lo utiliza?
+Div es un contenedor y se usa para ordenar/agrupar elementos que deberian posiblemente tendran el mismo comportamiento
+Se usa en html
+
+
+mgrozado@gmail.com
+Cesar.alberto.munoz@gmail.com

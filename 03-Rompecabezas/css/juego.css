@@ -1,0 +1,171 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: linear-gradient(45deg, #ffffff 47.62%, #000000 47.62%, #000000 50%, #ffffff 50%, #ffffff 97.62%, #000000 97.62%, #000000 100%);
+  background-size: 29.70px 29.70px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "- ";
+  color: #000;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #000;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60 {
+  background: #FFF;
+
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#juego{
+  width: 600px;
+  height: 600px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.cuadrados{
+  width: 33%;
+  height: 33%;
+  float: left;
+  border: 0.5px solid black;
+}
+
+#juego img{
+  width: 100%;
+  height: 100%;
+}
+
+#img_final{
+  width: 100%;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    /*display: inline-block;*/
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 40%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+.popup .hidden {
+    visibility: hidden;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+#cont-boton{
+  margin-bottom: 7px;
+}
+.boton {
+  background-color:#000000;
+  -moz-border-radius:13px;
+  -webkit-border-radius:13px;
+  border-radius:13px;
+  border:1px solid #414241;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:10px 78px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.boton:hover {
+  background-color:#8f8f8f;
+}
+.boton:active {
+  position:relative;
+  top:1px;
+}
+
+        
