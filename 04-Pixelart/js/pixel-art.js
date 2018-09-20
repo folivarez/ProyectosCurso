@@ -26,18 +26,25 @@ var colorPersonalizado = document.getElementById('color-personalizado');
 var paleta = document.getElementById('paleta');
 var grillaPixeles = document.getElementById('grilla-pixeles');
 var indicadorDeColor = document.getElementById('indicador-de-color');
+var btnGuardar = document.getElementById('guardar');
 var nroDeGrilla = 1750;
 var colorSeleccionado;
+var mousePresionado;
 
 colorPersonalizado.addEventListener('change', 
   (function() {
+    console.log('seteo color personalizado');
     // Se guarda el color de la rueda en colorActual
-    colorActual = colorPersonalizado.value;
+    var colorActual = colorPersonalizado.value;
+    console.log(colorActual);
     // Completar para que cambie el indicador-de-color al colorActual
+    colorPersonalizado.style.backgroundColor = colorSeleccionado;
 
 
   })
 );
+
+
 
 function setGrillaDeColores(){
   console.log("seteo colores");
@@ -57,7 +64,7 @@ function setGrillaPixeles(){
   for (var i = 0; i <= nroDeGrilla; i++) {
     var item = document.createElement('div');
     item.addEventListener('click', setColor, false);
-    item.addEventListener('onmousedown', setColor, false);
+    
     grillaPixeles.appendChild(item);
   }
 }
@@ -68,8 +75,9 @@ function getColor(e){
 }
 
 function setColor(e){
+  
   e.target.style.backgroundColor = colorSeleccionado;
-  console.log(colorSeleccionado);
+  console.log('pinto');
 }
 
 function setIndicadorDeColor(color){
@@ -77,9 +85,66 @@ function setIndicadorDeColor(color){
 }
 
 
+grillaPixeles.addEventListener('mousedown', function( event ) {    
+  console.log('presiona');
+  mousePresionado = true;
+  }, false);
+
+grillaPixeles.addEventListener('mouseup', function( event ) {    
+  console.log('suelta');
+  mousePresionado = false;
+  }, false);
+
+grillaPixeles.addEventListener('mouseover', function( event ) {    
+  console.log('paso');
+  if(mousePresionado){
+    event.target.style.backgroundColor = colorSeleccionado;
+  }
+
+  }, false);
+
+btnGuardar.addEventListener('click', function( event ) {    
+  console.log('guardar');
+  guardarPixelArt();
+  }, false);
+
+$( "#borrar" ).click(function() {
+  $( "#grilla-pixeles div" ).animate({
+    backgroundColor: "#fff"
+  }, 2000, function() {
+    // Animation complete.
+  });
+});
+
+
+$( "#batman" ).click(function() {
+    cargarSuperheroe(batman);
+    console.log('batman');
+});
+
+$( "#wonder" ).click(function() {
+    cargarSuperheroe(wonder);
+    console.log('wonder');
+});
+
+$( "#flash" ).click(function() {
+    cargarSuperheroe(flash);
+    console.log('flash');
+});
+$( "#invisible" ).click(function() {
+    cargarSuperheroe(invisible);
+    console.log('invisible');
+});
+
+
+
+  
+
 function inicio(){
   setGrillaDeColores();  
   setGrillaPixeles();
+
+
 }
 
 
